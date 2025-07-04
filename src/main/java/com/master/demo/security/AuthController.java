@@ -44,6 +44,7 @@ public class AuthController {
         Map<String, Object> response = new HashMap<>();
         response.put("token", token);
         response.put("username", username);
+        response.put("id", employee.getId());
         response.put("role", employee.getRole());
         response.put("expiresInMinutes", 30);
 
